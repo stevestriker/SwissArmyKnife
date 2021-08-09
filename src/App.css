@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+body {
+  background-color: #062847;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mp-container {
+  height: 100vh;
+  width: 100%;
+  background: url(Components/Images/musicpage-blueheadphones3.jpg) no-repeat
+    center center;
+  background-size: cover;
+  font-family: "Goldman", cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mp-hello {
+  font-size: 20px;
+  color: aqua;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mp-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: aquamarine;
+  align-items: center;
+  opacity: 0.4;
+}
+
+.mp-nav ul li {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.mp-nav a {
+  color: black;
+}
+.mp-nav-cp {
+  text-decoration: line-through;
+}
+
+.mp-logo {
+  height: 75px;
+  width: 200px;
+  margin-left: 60px;
+}
+
+.mp-clock-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mp-clock-container {
+  display: flex;
+  color: aquamarine;
+  font-size: x-small;
+  justify-content: center;
+  align-items: center;
+}
+.mp-clock-container h3 {
+  padding-right: 8px;
+}
+.mp-clock-container img {
+  height: 30px;
+  width: 50px;
+  padding-left: 10px;
+}
+
+.mp-content {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+}
+
+.mp-left-col {
+  margin-left: 3%;
+}
+
+.mp-msg {
+  margin-left: 10%;
+  float: left;
+  color: aqua;
+  font-size: 70px;
+  line-height: 110px;
+}
+
+.mp-right-col {
+  float: right;
   display: flex;
   flex-direction: column;
+  margin-right: 10%;
+  margin-top: 120px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 20px;
+  color: aqua;
+}
+.mp-button {
+  background-color: black;
+  color: aqua;
+  /*margin-left: 50px;*/
+  font-size: 2rem;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mp-marquee {
+  speed: 8;
+  width: 18rem;
 }
